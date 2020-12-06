@@ -1,0 +1,28 @@
+@media (min-width: 720px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .logo h1 {
+        font-size: 45px;
+        z-index: 1000;
+    }
+
+    .nav-menu {
+        margin-top: 20px;
+    }
+
+    .logo-container {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        background-color: aliceblue;
+    }
+}

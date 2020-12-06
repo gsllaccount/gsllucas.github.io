@@ -1,0 +1,185 @@
+/* PreSet  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial';
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.nav-menu i:hover {
+    color: rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.logo-container {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: aliceblue;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 156px;
+    
+
+    /* background: url('../img/banner.png') no-repeat fixed; */
+}
+
+.section-container {
+    margin-top: 40px;
+    padding: 0 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.center p {
+    margin-top: 4px;
+}
+
+.topics-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px auto;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+
+.topics-container i {
+    font-size: 50px;
+}
+
+.about {
+    text-align: center;
+    width: 280px;
+    height: 385px;
+    background-color: #fff;
+    margin: 9px;
+    padding: 9px;
+    border-radius: 9px;
+}
+
+.about p, li {
+    margin-top: 9px;
+}
+
+.about:hover {
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.about:active {
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.footer-element {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid rgba(0,0,0,0.6);
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.footer-element i {
+    margin-top: 9px;
+}
+
+.footer-container {
+    background: linear-gradient(to bottom, aliceblue, rgb(224, 240, 255));
+}
+
+.hover {
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+
+/* Animações */
+
+@keyframes up { /* at rules */
+    from{
+        opacity: 0;
+        transform: translateY(-26px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes right {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+/* Set Animations */
+
+.animate-up{
+    animation-name: up;
+    animation-duration: 800ms;
+    animation-fill-mode: backwards;
+}
+
+.main-container {
+    animation-delay: 800ms;
+}
+
+.topics-container {
+    animation-delay: 1600ms;
+}
+
+.footer-container {
+    animation-delay: 2400ms;
+}
+
+.animation-right{
+    animation-name: right;
+    animation-duration: 0.6s;
+}
+
+
